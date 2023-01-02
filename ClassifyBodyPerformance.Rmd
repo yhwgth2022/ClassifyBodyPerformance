@@ -1,4 +1,4 @@
-Github Livepage
+[Github Livepage](https://yhwgth2022.github.io/ClassifyBodyPerformance/)
 
 ---
 title: "How to use health indicators to distinguish the degree of physical fitness"
@@ -132,7 +132,7 @@ library("GGally")
 variables = subset(D,select = -c(11))
 
 pairs = ggpairs(variables)
-
+pairs
 
 RESF<-D[,1:10]
 # Compute the means m_j and standard deviations std_j
@@ -154,11 +154,7 @@ x = RESF
 y = factor(D$X11)
 ```
 
-```{r, echo=FALSE, fig.cap="Correlation between variables"}
-pairs
-```
-
-#  Data analysis
+# Data analysis
 
 ## I.Random Forest
 
@@ -325,8 +321,9 @@ is taken to train the model.
 
 Loaded Library "caret" to use the confusionMatrix() function. The test
 confusion Matrix below shows that the 2 of the lowest confusion classes
-are D2 and D3. Rank B and rank C are chosen as data to train the SVM
-model to get better grading accuracy.
+are D2 and D3. Group B and group C are chosen as data to train the SVM
+model to get better grading accuracy. The accuracies of group A and group D are 
+73.76% and 89.32%.
 
 ```{r}
 

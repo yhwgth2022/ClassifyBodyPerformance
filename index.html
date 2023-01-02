@@ -11,7 +11,7 @@
 
 <meta name="author" content="Yuhong Wang" />
 
-<meta name="date" content="2022-12-29" />
+<meta name="date" content="2022-12-30" />
 
 <title>How to use health indicators to distinguish the degree of physical fitness</title>
 
@@ -353,12 +353,13 @@ display: none;
 <h1 class="title toc-ignore">How to use health indicators to distinguish
 the degree of physical fitness</h1>
 <h4 class="author">Yuhong Wang</h4>
-<h4 class="date">2022-12-29</h4>
+<h4 class="date">2022-12-30</h4>
 
 </div>
 
 
-<p>Github Livepage</p>
+<p><a href="https://yhwgth2022.github.io/ClassifyBodyPerformance/">Github
+Livepage</a></p>
 <p>12/28/2022</p>
 <div id="introduction" class="section level1">
 <h1><strong>Introduction</strong></h1>
@@ -649,11 +650,11 @@ for (i in 1:length(nodesize)) {
   OOB_acc[i] = round((1-forest$err.rate[nodesize[i],1]),4)
 }</code></pre>
 <pre><code>## 用户 系统 流逝 
-## 8.71 0.14 8.89 
+## 8.43 0.10 8.61 
 ## 用户 系统 流逝 
-## 8.47 0.21 8.77 
+## 8.43 0.11 8.53 
 ## 用户 系统 流逝 
-## 8.34 0.22 8.64</code></pre>
+## 8.37 0.08 8.46</code></pre>
 <pre class="r"><code>table2 = data.frame(OOB_acc,nodesize,row.names = nodesize)
 
 plot(nodesize,OOB_acc,&#39;b&#39;)</code></pre>
